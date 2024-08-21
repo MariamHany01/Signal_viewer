@@ -403,7 +403,6 @@ class MainApp(QMainWindow, FORM_CLASS):
         )
         template = PageTemplate(id="test", frames=frame)
 
-        # template.beforeDrawPage = header
 
         doc.addPageTemplates([template])
         # Create snapshots of signals and add to PDF
@@ -513,11 +512,6 @@ class MainApp(QMainWindow, FORM_CLASS):
                     self.channel_1_combobox.addItem(title[:-4])
                     self.viewer1.legend.addItem(self.viewer1.plot_items[-1], title[:-4])
                     self.channel_1_hide_checkbox.setChecked(Qt.Checked)
-                    # Set the button's color to match the initial color
-                    # last_plot_item = self.viewer1.plot_items[-1]
-                    # initial_color = last_plot_item.opts["pen"].color()
-                    # button_stylesheet = f"background-color: {initial_color.name()}"
-                    # self.adjust_color_channel1_button.setStyleSheet(button_stylesheet)
                 else:
                     QMessageBox.warning(
                         self,
@@ -742,7 +736,7 @@ class MainApp(QMainWindow, FORM_CLASS):
                 title = self.channel_2_combobox.currentText()
                 button = self.adjust_color_channel2_button  
 
-                # # Get the background color of the button
+                # Get the background color of the button
                 palette = button.palette()
                 color = palette.color(button.backgroundRole())
                 color=color.name()
