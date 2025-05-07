@@ -3,7 +3,7 @@
 ![Multi-Cahnnel Signal Viewer Window App](images/Screenshot.png)
 
 
-The Multi-Channel Signal Viewer is a desktop application designed to facilitate the visualization and manipulation of multiple signal channels. This professional README file will guide you through the key features and functionalities of the application.
+The Multi-Channel Signal Viewer is a desktop application designed to facilitate the visualization and manipulation of multiple signal channels. This README file will guide you through the key features and functionalities of the application.
 
 ## Table of Contents
 
